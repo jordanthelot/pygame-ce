@@ -1262,7 +1262,8 @@ font_init(PyFontObject *self, PyObject *args, PyObject *kwds)
             }
             goto error;
         }
-        fontsize = (int)(fontsize * .6875);
+        //used to be fontsize = (int)(fontsize * .6875);
+        
     }
 
     rw = pgRWops_FromObject(obj, NULL);
